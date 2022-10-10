@@ -1,0 +1,80 @@
+*{margin: 0; padding: 0;font-family: 'Paytone One', sans-serif;}
+
+.container{
+     display: grid;
+     justify-content: center;
+     align-content: center;
+     min-height: 100vh;
+     grid-template-columns: 40vw;
+     grid-template-rows: repeat(4,6vh) 5vh repeat(4,7vh);
+     grid-gap: 10px;
+    
+}
+
+body{
+    background: rgb(85, 91, 145);
+    background-image: url("bmi.png");
+ 	background-repeat: no-repeat;
+    background-size: auto;
+}
+
+h1, h3{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.bmi-value{
+    background-color: rgb(171, 210, 247);
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.status{
+    background-color: rgb(171, 210, 247);
+    display: grid;
+    grid-template-rows: 50% 50%;
+    
+}
+
+.container > div{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px;
+}
+
+button,input{
+    min-width: 100%;
+    min-height: 100%;
+    border: none;
+    outline: none;
+    font-size: medium;
+    border-radius: 8px;
+}
+
+input{
+    background: rgb(255, 255, 255);
+    text-indent: 0.5em;
+    max-width:100% ;
+    color: rgb(0, 0, 0);
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+button{
+    background: rgb(110, 142, 179);
+    cursor: pointer;
+}
+
+button:hover{
+    background: rgb(63, 68, 114);
+    color: rgb(0, 0, 0);
+}
